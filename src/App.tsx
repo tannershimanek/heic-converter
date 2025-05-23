@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ImageConverter } from './components/ImageConverter'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <p>Convert HEIC images to JPG format with ease.</p>
         </footer>
       )}
+      <Analytics />
     </div>
   )
 }
